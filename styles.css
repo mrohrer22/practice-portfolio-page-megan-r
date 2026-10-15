@@ -2,28 +2,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.header-container {
     background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inline-logo, h1 {
+  display: inline-block;
+  vertical-align: middle; /* Aligns the center of the image with the text */
+  margin-right: 10px;
 }
 
 p {
     font-size: 18px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: middle;
-}
-
-th {
-    background-color: #f2f2f2;
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 form {

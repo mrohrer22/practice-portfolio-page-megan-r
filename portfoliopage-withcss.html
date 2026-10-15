@@ -7,67 +7,71 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Megan</h1>
-        <p>Aspiring Software Developer</p>
+    <header class="header-container">
+        <div class="header-text">
+            <h1>Megan</h1>
+            <p>Aspiring Software Developer</p>
+        </div>
+        <img src="profile.JPG" alt="Profile picture of Megan" class="profile-picture">
     </header>
-    <h2>About Me!</h2>
-        <p>
-        Hello! I'm new to learning how to code but HTML is something that I am familiar with so I'm hoping that I do well. 
-        </p>
-    <h2>Fun Facts</h2>
-        <p>
-            <ul>
-                <li>💼 <strong>By Day:</strong> Project Manager</li>
-                <li>🚀 <strong>By Night:</strong> Coding & Learning HTML</li>
-                <li>🏔️ <strong>Outdoors & Offline:</strong> Hiking, Kayaking, Biking</li>
-                <li>🎮 <strong>Indoors & Unwinding:</strong> Video Games, Cozy Reading</li>
-            </ul>
-        <h3>Current Favorites</h3>
-            <ul>
-                <li>📚 <strong>Book Series:</strong> <em>Red Rising</em></li>
-                <li>☕ <strong>TV Show:</strong> <em>Gilmore Girls</em></li>
-                <li>🎬 <strong>Movie:</strong> <em>Dune: Part Two</em></li>
-            </ul>
-        </p>
-    <br>
-    <table border="1">
-        <tr>
-            <th>Skills</th>
-            <th>Profeciency</th>
-        </tr>
-        <tr>
-            <td>PowerBI</td>
-            <td>High</td>
-        </tr>
-        <tr>
-            <td>Tableau</td>
-            <td>Medium</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td>Medium-Low</td>
-        </tr>
-        <tr>
-            <td>Javascript</td>
-            <td>Low</td>
-        </tr>
-    </table>
-    <h2>Want to contact me?</h2>
-    <p>Use the form below</p>
-    <form action="/submit" method="POST">
-        <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Your full name">
+    <section>
+        <h2>About Me!</h2>
+            <p>
+            Hello! I am an aspiring software developer currently expanding my technical toolkit through hands-on programming coursework and projects. I love transforming logic into interactive solutions, tackling creative challenges, and continuously learning new technologies to build meaningful applications.
+            </p>
+        
+        <h2>Fun Facts</h2>
+            <p>
+                <ul>
+                    <li>💼 <strong>By Day:</strong> Project Manager</li>
+                    <li>🚀 <strong>By Night:</strong> Coding & Learning HTML</li>
+                    <li>🏔️ <strong>Outdoors & Offline:</strong> Hiking, Kayaking, Biking</li>
+                    <li>🎮 <strong>Indoors & Unwinding:</strong> Video Games, Cozy Reading</li>
+                </ul>
+            <h3>Current Favorites</h3>
+                <ul>
+                    <li>📚 <strong>Book Series:</strong> <em>Red Rising</em></li>
+                    <li>☕ <strong>TV Show:</strong> <em>Gilmore Girls</em></li>
+                    <li>🎬 <strong>Movie:</strong> <em>Dune: Part Two</em></li>
+                </ul>
+            </p>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Project Management</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Want to contact me?</h2>
+        <p>Use the form below</p>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
 
-        <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            <label for="email">Email:</label>
+                <input type="email" 
+                id="email" 
+                name="email"
+                placeholder="your.email@example.com"
+                required 
+                >
 
-        <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+            <label for="message">Message:</label>
+                <textarea 
+                id="message" 
+                name="message" 
+                rows="5"
+                placeholder="Type your message here..." 
+                required 
+                ></textarea>
             <button type="submit">Send Message</button>
-    </form>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 Megan. All rights reserved.</p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2026 Megan. All rights reserved.</p>
-</footer>
 </html>
